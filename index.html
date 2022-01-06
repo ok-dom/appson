@@ -602,8 +602,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!--script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO_5h890WNShs_YLGivCBfs2U89qXR-7Y&callback=initMap"></script-->
     <script src="assets/js/theme.js"></script>
 	<script>
-      var count = document.querySelector('#counter'); // получим элемент
-	  count.title = count.title++;
+      var counterStr = document.querySelector('#counter'); // получим элемент
+	  var counterNum = counterStr*1;
+	  var counterNumIncrement = counterNum++;
+	  var counterNumIncrementStr = counterNumIncrement + '';
+	  count.title = counterNumIncrementStr;
     </script>
 </body>
 
